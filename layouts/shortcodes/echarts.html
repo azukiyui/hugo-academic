@@ -1,0 +1,7 @@
+<div id="echarts" ></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('echarts'));
+    var option = JSON.parse({{.Inner}});
+	myChart.setOption(option);
+</script>
